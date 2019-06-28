@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/jquery.js"></script>
+    <title>购物车页面</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css" />
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/floor.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+
+</head>
+
+<body>
+    <nav class="top-nav">
+        <div class="top-nav-box">
+            <div id="" class="top-navbox">
+                <div id="" class="h-area">
+                    <div class="" id="">
+                        <div class="province" id="">沈阳市<span class="iconfont">&#xe68c;</span></div>
+
+                    </div>
+
+                    <div class="c-h-area-body" id="J_header_area_content">
+                        <p class="c-h-area-explain">请选择你所在的收货地区<span class="iconfont">&#xe60d;</span></p>
+                        <div class="h-area-tab">
+                            <div class="c-h-area-tab-header">
+                                <ul class="h-area-tab-ul">
+                                    <li id="tab_province" class="tab-p" data-flag="province">省份</li>
+                                    <li id="tab_city" class="tab-c" data-flag="city">城市</li>
+                                </ul>
+                            </div>
+                            <div class="c-h-area-tab-body">
+                                <ul id="J_header_province_container" class="h-area-list-province"></ul>
+                                <ul id="J_header_city_container" class="h-area-list-city"></ul>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <ul class="top-nav-tool" id="J-topNavTool">
+                    <li class="wp-my">
+                        <a href="logn.html" class="awp" id="ydl">登录<span class="iconfont">&#xe60d;</span>
+                            <span class="iconfont">&#xe620;</span></a><i>/</i>
+
+
+                        <ul id="J_head_log" class="login-before">
+                            <li class="wp-user">
+                                <div class="top-nav-pic-infs">
+                                    <span class="top-nav-pic-avater"></span>
+
+                                    <p id="J_uInfo_name">
+                                        <a href="logn.html" mars_sead="home_top_nav2_login" class="J_header_lnkLogin"
+                                            rel="nofollow">
+                                            <span id="J_uInfo_welcom">欢迎回来</span> <span
+                                                class="top-nav-login">[请登录]</span>
+
+                                        </a>
+                                        <div class="underline"></div>
+                                    </p>
+                                </div>
+                                <p class="top-nav-list">
+                                    <span>
+                                        <a href="#" target="_blank">我的收藏</a>
+                                    </span>
+                                    <span>
+                                        <a href="#" target="_blank">我的订单</a>
+                                    </span>
+                                    <span>
+                                        <a href="#" target="_blank">零钱</a>
+                                    </span>
+                                    <span>
+                                        <a href="#" target="_blank">我的优惠券</a>
+                                    </span>
+                                    <span>
+                                        <a href="#" target="_blank">我的唯品币</a>
+                                    </span>
+                                    <span>
+                                        <a href="#" target="_blank">唯品金融</a>
+                                    </span>
+                                </p>
+
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="J_Register_hasnoname" class="register_hasnoname">
+                        <a href="regist.html" class="awp">注册</a> <i>/</i>
+                    </li>
+
+
+
+                    <li id="J_signin_wrap" class="wp-sign" data-hover="wp-order-hover" style="display: list-item;">
+                        <span>
+                            <i id="J_signin_icon" class="wp-sign-icon"></i>
+                            <span id="J_signin_text">签到有礼</span><i>/</i>
+                        </span>
+
+                        <div id="J_signin_container">
+                            <span class="iconfont">&#xe60d;</span>
+                            <div id="J_signin_unSigned"
+                                class="ui-tooltips ui-tooltips-top-arrow head-sign head-sign-in">
+
+                                <div class="head-sign-content">
+                                    <div class="head-sign-day">
+                                        <div class="head-sign-day-anime">
+                                            <div class="J_action_day head-sign-day-item">
+
+                                                <span class="head-sign-day-icon"></span>
+
+                                                <span class="head-sign-day-everyday">1天</span>
+                                            </div>
+                                            <div class="J_action_day head-sign-day-item">
+
+                                                <span class="head-sign-day-icon"></span>
+
+                                                <span class="head-sign-day-everyday">2天</span>
+                                            </div>
+                                            <div class="J_action_day head-sign-day-item">
+
+
+                                                <span class="head-sign-day-icon"></span>
+                                                <span class="head-sign-day-everyday">3天</span>
+                                            </div>
+                                            <div class="J_action_day head-sign-day-item">
+
+
+                                                <span class="head-sign-day-icon"></span>
+                                                <span class="head-sign-day-everyday">4天</span>
+                                            </div>
+                                            <div class="J_action_day head-sign-day-item">
+
+
+                                                <span class="head-sign-day-icon"></span>
+                                                <span class="head-sign-day-everyday">5天</span>
+                                            </div>
+                                            <div class="J_action_day head-sign-day-item">
+
+                                                <span class="head-sign-day-icon"></span>
+                                                <span class="head-sign-day-everyday">6天</span>
+                                            </div>
+                                            <div class="J_action_day head-sign-day-item">
+
+
+                                                <span class="head-sign-day-icon"></span>
+                                                <span class="head-sign-day-everyday">7天</span>
+                                            </div>
+                                        </div>
+                                        <span id="J_prize_container" class="head-sign-day-msg"></span>
+                                        <span class="head-sign-day-link"></span>
+                                    </div>
+                                    <div class="head-sign-msg">
+                                        <span class="line"></span>
+                                        <a id="J_signin_href" class="head-sign-msg-txt"
+                                            target="_blank">每天签到送惊喜，连续签到更享心动奖励</a>
+                                        <a id="J_signin_btn" href="javascript:;">签到</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="wp-order" data-hover="wp-order-hover">
+
+                        <a href="#" class="awp">我的订单</a>
+                        <i>&nbsp;/</i>
+
+                    </li>
+                    <li class="wp-service" data-hover="wp-fav-nav-hover" id="J-favs">
+                        <span class="service-in">
+                            <a href="#" target="_blank" class="awp">我的特卖<span class="iconfont">&#xe620;</span></a>
+                            <i class="ico-dis">&nbsp;/</i>
+                        </span>
+                        <div class="service-infor">
+                            <p class="top-nav-list">
+                                <span><a href="#" target="_blank">商品收藏</a></span>
+                                <span><a href="#" target="_blank">品牌收藏</a></span>
+                                <span><a href="#" target="_blank">我的足迹</a></span>
+                            </p>
+                        </div>
+                    </li>
+
+
+                    <li class="wp-phone" data-j-hover="wp-phone-hover" id="J_phone_tip">
+                        <span class="iconfont">&#xe61d;</span>
+                        <a href="#" target="_blank" class="awp"> 手机版</a><i>&nbsp;/</i>
+
+                        <div class="phone-infor" id="J_phoneTip_con">
+                            <img class="J_qrcode_img" src="imgs/code.png" width="161" height="161" alt="二维码">
+                            <p>
+                                <a href="#" target="_blank">随时逛 及时抢</a>
+                            </p>
+
+                        </div>
+                    </li>
+                    <li class="wp-more">
+
+                        <a href="###" class="awp">&nbsp;&nbsp;更多</a>
+                        <i class="ico-dis">&nbsp;/</i>
+                        <div class="infor-more">
+                            <h5 class="service-more-hd">合作专区</h5>
+                            <p class="top-nav-list">
+                                <a href="#" target="_blank">联名卡申请</a>
+                                <a href="#" target="_blank">唯品卡</a>
+                                <a href="#" target="_blank">支付专区</a>
+                            </p>
+                            <span class="line"></span>
+                            <h5 class="service-more-hd">关于我们</h5>
+                            <p class="top-nav-list">
+                                <a href="#" target="_blank">Sell on vip</a>
+                                <a href="#" target="_blank">品牌招商</a>
+                                <a href="#" target="_blank">官方博客</a>
+                            </p>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="head-logo">
+        <div class="head-inner" id="J-head-inner-def">
+            <div class="c-logo">
+                <div class="header-logo-dop">
+                    <a  href="#" >
+                        <img src="imgs/log.png" alt="品牌特卖" id="J-vipLogo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cart-box">
+            <div class="cart-inner">
+        <p id="bt"><span>全选</span><input type="checkbox" id="all" /><span class="spxx">&nbsp;商品信息</span><span class="spsl">&nbsp;数量</span>  <span class="spjg">&nbsp;价格</span> </p>
+        <ul id="cartlist">
+        </ul>
+        <p id="zj">0</p>
+        </div>
+    </div>
+    <div class="cart-pic">
+            <a href="#" id="goplist">
+            <img src="imgs/cart1.png">
+            <img src="imgs/cart2.png">
+            <img src="imgs/cart3.png">   
+            </a>       
+        </div>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-bz">
+            </div>
+            <div class="footer-list">
+                <dl class="link-anim">
+                    <dt>服务保障</dt>
+                    <dd>
+                        <a href="//viva.vip.com/act/supportInsurance?wapid=vivac_767" target="_blank"
+                            rel="nofollow">正品保证</a>
+                    </dd>
+                    <dd>
+                        <a href="//help.vip.com/commitment.php" target="_blank" rel="nofollow">7天无理由放心退</a>
+                    </dd>
+                    <dd>
+                        <a href="//help.vip.com/commitment.php" target="_blank" rel="nofollow">退货返10元唯品币</a>
+                    </dd>
+                    <dd>
+                        <a href="//acs.vip.com/" target="_blank" rel="nofollow">7x15小时客户服务</a>
+                    </dd>
+                    <dd>
+                        <a href="//viva.vip.com/act/changeProduct-pc?wapid=vivac_825" target="_blank"
+                            rel="nofollow">7天无理由随心换</a>
+                    </dd>
+                </dl>
+                <dl class="link-anim">
+                    <dt>购物指南</dt>
+                    <dd>
+                        <a href="//help.vip.com/themelist.php?type=detail&amp;id=308" target="_blank"
+                            rel="nofollow">导购演示</a>
+                    </dd>
+                    <dd>
+                        <a href="//help.vip.com/themelist.php?type=detail&amp;id=330" target="_blank"
+                            rel="nofollow">订单操作</a>
+                    </dd>
+                    <dd>
+                        <a href="//help.vip.com/themelist.php?type=detail&amp;id=206" target="_blank"
+                            rel="nofollow">会员注册</a>
+                    </dd>
+                    <dd>
+                        <a href="//help.vip.com/themelist.php?type=detail&amp;id=329" target="_blank"
+                            rel="nofollow">账户管理</a>
+                    </dd>
+                    <dd>
+                        <a href="//help.vip.com/themelist.php?type=detail&amp;id=104" target="_blank"
+                            rel="nofollow">收货样品</a>
+                    </dd>
+                    <dd>
+                        <a href="//help.vip.com/themelist.php?cid=69" target="_blank" rel="nofollow">会员等级</a>
+                    </dd>
+                </dl>
+                <dl class="link-anim">
+                    <dt>支付方式</dt>
+                    <dd>
+                        <a href="//mst.vip.com/ByMIo4p5mM1-pZjNGBTysQ.php?client=vipcms&amp;wapid=mst_2667903&amp;extra_type=1"
+                            target="_blank" rel="nofollow">快捷支付</a>
+                    </dd>
+                    <dd>
+                        <a href="//help.vip.com/themelist.php?type=detail&amp;id=336" target="_blank"
+                            rel="nofollow">23家主流网银支付</a>
+                    </dd>
+                    <dd>
+                        <a href="//help.vip.com/themelist.php?type=detail&amp;id=336" target="_blank"
+                            rel="nofollow">支付宝、银联等支付</a>
+                    </dd>
+                    <dd>
+                        <a href="//help.vip.com/themelist.php?type=detail&amp;id=336" target="_blank"
+                            rel="nofollow">信用卡支付</a>
+                    </dd>
+                    <dd>
+                        <a href="//help.vip.com/themelist.php?type=detail&amp;id=335" target="_blank"
+                            rel="nofollow">零钱支付</a>
+                    </dd>
+                </dl>
+                <dl class="link-anim">
+                    <dt>配送方式</dt>
+                    <dd>
+                        <a href="//help.vip.com/themelist.php?type=detail&amp;id=345" target="_blank"
+                            rel="nofollow">全场满288元免运费</a>
+                    </dd>
+                    <dd>
+                        <a href="//help.vip.com/themelist.php?type=detail&amp;id=345" target="_blank"
+                            rel="nofollow">配送范围及运费</a>
+                    </dd>
+                    <dd>
+                        <a href="//help.vip.com/themelist.php?type=detail&amp;id=63" target="_blank"
+                            rel="nofollow">验货与签收</a>
+                    </dd>
+                </dl>
+                <dl class="link-anim">
+                    <dt>售后服务</dt>
+                    <dd>
+                        <a href="//help.vip.com/themelist.php?cid=74" target="_blank" rel="nofollow">退货政策</a>
+                    </dd>
+                    <dd>
+                        <a href="//help.vip.com/themelist.php?type=detail&amp;id=236" target="_blank"
+                            rel="nofollow">退货流程</a>
+                    </dd>
+                    <dd>
+                        <a href="//help.vip.com/themelist.php?type=detail&amp;id=317" target="_blank"
+                            rel="nofollow">退款方式和时效</a>
+                    </dd>
+                    <dd>
+                        <a href="//help.vip.com/themelist.php?cid=146" target="_blank" rel="nofollow">换货服务</a>
+                    </dd>
+                </dl>
+                <dl class="tc last">
+                    <dt>唯品会APP二维码</dt>
+                    <dd>
+                        <img class="lazy" src="imgs/code.png" width="100" height="100" alt="唯品会APP二维码">
+                    </dd>
+                    <dd>下载唯品会移动APP</dd>
+                </dl>
+            </div>
+            <div class="footer-inf">
+                <ul class="breadcrumb" style="height: 0;"></ul>
+                <p class="footer-infor-ab">
+                    <a target="_blank" href="//viva.vip.com/act/supportContact-pc?wapid=vivac_806"
+                        title="关于我们">关于我们</a>|
+                    <a target="_blank" href="//viva.vip.com/act/supportContactEn-pc?wapid=vivac_799"
+                        title="About us">About us</a>|
+                    <a target="_blank" href="http://ir.vip.com/" title="Investor Relations">Investor
+                        Relations</a>|
+                    <a target="_blank" href="//blog.vip.com/?r=/Blog/HTML_showList/sort_id//29" title="媒体报道">媒体报道</a>|
+                    <a target="_blank" href="//vis.vip.com/stipulate/" title="品牌招商">品牌招商</a>|
+                    <a target="_blank" rel="nofollow" href="//viva.vip.com/act/supportPrivacy-pc?wapid=vivac_804"
+                        title="隐私条款">隐私条款</a>|
+                    <a target="_blank" href="http://job.vip.com" title="唯品诚聘">唯品诚聘</a>|
+                    <a target="_blank" href="//vipcard.vip.com" title="唯品卡">唯品卡</a>|
+                    <a target="_blank" href="//viva.vip.com/act/supportContactUs-pc?wapid=vivac_800"
+                        title="联系我们">联系我们</a>
+                </p>
+                <p class="footer-infor-txt">
+                    Copyright © 2008-2019 vip.com，All Rights Reserved&nbsp;&nbsp;使用本网站即表示接受
+                    <a rel="nofollow" href="//viva.vip.com/act/supportClause-pc?wapid=vivac_802">唯品会用户协议</a>。版权所有
+                    <a rel="nofollow" href="//www.vip.com/">广州唯品会电子商务有限公司</a>
+                    <br>
+                    <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44010302111111"
+                        target="_blank">
+                        <img src="imgs/police_icon.png" width="14" height="14" style="margin:2px 3px 0 0;">粤公网安备
+                        44010302111111号
+                    </a>&nbsp;&nbsp;
+                    <a rel="nofollow" href="http://www.beian.miit.gov.cn">粤ICP备08114786号</a>
+                    <a rel="nofollow" target="_blank"
+                        href="//viva.vip.com/act/actValueAddedService-pc">增值业务经营许可证：粤B2-20170777 </a>
+                    <a rel="nofollow"
+                        href="http://qr.ccm.gov.cn/lic/4b3d4177d8ec4aef91469e36f63702fa#">网络文化经营许可证：粤网文〔2018〕5030-1743号</a>
+                    <br>
+                    <a rel="nofollow"
+                        href="//viva.vip.com/act/actBusinessLicense-pc?wapid=vivac_813">自营主体经营证照</a>&nbsp;&nbsp;
+                    <a href="//help.vip.com/themelist.php?type=detail&amp;id=475" target="_blank"
+                        rel="nofollow">风险监测信息</a>&nbsp;&nbsp;
+                    <a rel="nofollow"
+                        href="//viva.vip.com/act/c/actDrugInfoLicense-pc?wapid=vivac_1070">互联网药品信息服务资格证书：（粤）-经营性-2018-0271</a>
+                    <a rel="nofollow" href="//viva.vip.com/act/actFoodTradeLicense-pc?wapid=vivac_1131">
+                        网络食品交易第三方平台备案凭证：粤B2-20170777 </a>
+                    <a rel="nofollow"
+                        href="//viva.vip.com/act/actInstrumentTradeLicense-pc?wapid=vivac_1132">医疗器械网络交易服务第三方平台备案凭证：（粤）网械平台备字[2019]第00001号</a>
+                </p>
+            </div>
+            <div></div>
+            <div class="footer-ftpic">
+                <p class="footer-pic">
+                    <a rel="nofollow" target="_blank" href="//online.unionpay.com/">
+                        <i class="footer-pic-ico01" title="银联特约商户"></i>
+                    </a>
+                    <a rel="nofollow" target="_blank" href="//weiquan.vip.com">
+                        <i class="footer-pic-ico02" title="消费维权服务站"></i>
+                    </a>
+                    <a rel="nofollow" target="_blank"
+                        href="http://netadreg.gzaic.gov.cn/ntmm/WebSear/WebLogoPub.aspx?logo=a8bbcd43bb6c42dcba9d357c2d8fad35">
+                        <i class="footer-pic-ico03" title="红盾电子链接标识"></i>
+                    </a>
+                    <a rel="nofollow" target="_blank" href="http://www.gzjd.gov.cn/">
+                        <i class="footer-pic-ico04" title="网络警察报警平台"></i>
+                    </a>
+                    <a rel="nofollow" target="_blank"
+                        href="//www.weibo.com/u/2931161010?topnav=1&amp;wvr=6&amp;topsug=1&amp;is_hot=1">
+                        <i class="footer-pic-ico05" title="公安局网络警察支队"></i>
+                    </a>
+                    <a rel="nofollow" target="_blank" href="https://credit.cecdc.com/CX20160725023666090470.html"
+                        id="___szfw_logo___">
+                        <i class="footer-pic-ico06" title="诚信网站"></i>
+                    </a>
+                    <a rel="nofollow" target="_blank"
+                        href="https://ss.knet.cn/verifyseal.dll?sn=2011022400100006603&amp;ct=df&amp;a=1&amp;pa=0.5265976136604793">
+                        <i class="footer-pic-ico07" title="可信网站"></i>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/spfl.js"></script>
+    <script type="text/javascript" src="js/cart.js"></script>
+    <script>
+        $.get("http://47.104.244.134:8080/cartlist.do", {
+                token: Token
+            })
+            .done((data) => {
+                console.log(data)
+                var cart = new Cart(data);
+                cart.show("cartlist", "all")
+                cart.getzj()
+            })
+    </script>
+
+</body>
+
+</html>

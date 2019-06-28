@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品详情页面</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/detial.css">
+    
+</head>
+
+<body>
+        <nav class="top-nav">
+                <div class="top-nav-box">
+                    <div id="" class="top-navbox">
+                        <div id="" class="h-area">
+                            <div class="" id="">
+                                <div class="province" id="">沈阳市<span class="iconfont">&#xe68c;</span></div>
+        
+                            </div>
+        
+                            <div class="c-h-area-body" id="J_header_area_content">
+                                <p class="c-h-area-explain">请选择你所在的收货地区<span class="iconfont">&#xe60d;</span></p>
+                                <div class="h-area-tab">
+                                    <div class="c-h-area-tab-header">
+                                        <ul class="h-area-tab-ul">
+                                            <li id="tab_province" class="tab-p" data-flag="province">省份</li>
+                                            <li id="tab_city" class="tab-c" data-flag="city">城市</li>
+                                        </ul>
+                                    </div>
+                                    <div class="c-h-area-tab-body">
+                                        <ul id="J_header_province_container" class="h-area-list-province"></ul>
+                                        <ul id="J_header_city_container" class="h-area-list-city"></ul>
+        
+                                    </div>
+                                </div>
+        
+                            </div>
+                        </div>
+                        <ul class="top-nav-tool" id="J-topNavTool">
+                            <li class="wp-my">
+                                <a href="logn.html" class="awp" id="ydl">登录<span class="iconfont">&#xe60d;</span>
+                                    <span class="iconfont">&#xe620;</span></a><i>/</i>
+                                <ul id="J_head_log" class="login-before">
+                                    <li class="wp-user">
+                                        <div class="top-nav-pic-infs">
+                                            <span class="top-nav-pic-avater"></span>
+        
+                                            <p id="J_uInfo_name">
+                                                <a href="logn.html" mars_sead="home_top_nav2_login" class="J_header_lnkLogin"
+                                                    rel="nofollow">
+                                                    <span id="J_uInfo_welcom">欢迎回来</span> <span
+                                                        class="top-nav-login">[请登录]</span>
+        
+                                                </a>
+                                                <div class="underline"></div>
+                                            </p>
+                                        </div>
+                                        <p class="top-nav-list">
+                                            <span>
+                                                <a href="#" target="_blank">我的收藏</a>
+                                            </span>
+                                            <span>
+                                                <a href="#" target="_blank">我的订单</a>
+                                            </span>
+                                            <span>
+                                                <a href="#" target="_blank">零钱</a>
+                                            </span>
+                                            <span>
+                                                <a href="#" target="_blank">我的优惠券</a>
+                                            </span>
+                                            <span>
+                                                <a href="#" target="_blank">我的唯品币</a>
+                                            </span>
+                                            <span>
+                                                <a href="#" target="_blank">唯品金融</a>
+                                            </span>
+                                        </p>
+        
+                                    </li>
+                                </ul>
+                            </li>
+        
+                            <li id="J_Register_hasnoname" class="register_hasnoname">
+                                <a href="regist.html" class="awp">注册</a> <i>/</i>
+                            </li>
+                            <li id="J_signin_wrap" class="wp-sign" data-hover="wp-order-hover" style="display: list-item;">
+                                <span>
+                                    <i id="J_signin_icon" class="wp-sign-icon"></i>
+                                    <span id="J_signin_text">签到有礼</span><i>/</i>
+                                </span>
+        
+                                <div id="J_signin_container">
+                                    <span class="iconfont">&#xe60d;</span>
+                                    <div id="J_signin_unSigned"
+                                        class="ui-tooltips ui-tooltips-top-arrow head-sign head-sign-in">
+        
+                                        <div class="head-sign-content">
+                                            <div class="head-sign-day">
+                                                <div class="head-sign-day-anime">
+                                                    <div class="J_action_day head-sign-day-item">
+        
+                                                        <span class="head-sign-day-icon"></span>
+        
+                                                        <span class="head-sign-day-everyday">1天</span>
+                                                    </div>
+                                                    <div class="J_action_day head-sign-day-item">
+        
+                                                        <span class="head-sign-day-icon"></span>
+        
+                                                        <span class="head-sign-day-everyday">2天</span>
+                                                    </div>
+                                                    <div class="J_action_day head-sign-day-item">
+        
+        
+                                                        <span class="head-sign-day-icon"></span>
+                                                        <span class="head-sign-day-everyday">3天</span>
+                                                    </div>
+                                                    <div class="J_action_day head-sign-day-item">
+        
+        
+                                                        <span class="head-sign-day-icon"></span>
+                                                        <span class="head-sign-day-everyday">4天</span>
+                                                    </div>
+                                                    <div class="J_action_day head-sign-day-item">
+        
+        
+                                                        <span class="head-sign-day-icon"></span>
+                                                        <span class="head-sign-day-everyday">5天</span>
+                                                    </div>
+                                                    <div class="J_action_day head-sign-day-item">
+        
+                                                        <span class="head-sign-day-icon"></span>
+                                                        <span class="head-sign-day-everyday">6天</span>
+                                                    </div>
+                                                    <div class="J_action_day head-sign-day-item">
+        
+        
+                                                        <span class="head-sign-day-icon"></span>
+                                                        <span class="head-sign-day-everyday">7天</span>
+                                                    </div>
+                                                </div>
+                                                <span id="J_prize_container" class="head-sign-day-msg"></span>
+                                                <span class="head-sign-day-link"></span>
+                                            </div>
+                                            <div class="head-sign-msg">
+                                                <span class="line"></span>
+                                                <a id="J_signin_href" class="head-sign-msg-txt"
+                                                    target="_blank">每天签到送惊喜，连续签到更享心动奖励</a>
+                                                <a id="J_signin_btn" href="javascript:;">签到</a>
+                                            </div>
+                                        </div>
+        
+                                    </div>
+                                </div>
+        
+                            </li>
+                            <li class="wp-order" data-hover="wp-order-hover">
+        
+                                <a href="#" class="awp" id="mydd">我的订单</a>
+                                <i>&nbsp;/</i>
+        
+                            </li>
+                            <li class="wp-service" data-hover="wp-fav-nav-hover" id="J-favs">
+                                <span class="service-in">
+                                    <a href="#" target="_blank" class="awp">我的特卖<span class="iconfont">&#xe620;</span></a>
+                                    <i class="ico-dis">&nbsp;/</i>
+                                </span>
+                                <div class="service-infor">
+                                    <p class="top-nav-list">
+                                        <span><a href="#" target="_blank">商品收藏</a></span>
+                                        <span><a href="#" target="_blank">品牌收藏</a></span>
+                                        <span><a href="#" target="_blank">我的足迹</a></span>
+                                    </p>
+                                </div>
+                            </li>
+        
+        
+                            <li class="wp-phone" data-j-hover="wp-phone-hover" id="J_phone_tip">
+                                <span class="iconfont">&#xe61d;</span>
+                                <a href="#" target="_blank" class="awp"> 手机版</a><i>&nbsp;/</i>
+        
+                                <div class="phone-infor" id="J_phoneTip_con">
+                                    <img class="J_qrcode_img" src="imgs/code.png" width="161" height="161" alt="二维码">
+                                    <p>
+                                        <a href="#" target="_blank">随时逛 及时抢</a>
+                                    </p>
+        
+                                </div>
+                            </li>
+                            <li class="wp-more">
+        
+                                <a href="###" class="awp">&nbsp;&nbsp;更多</a>
+                                <i class="ico-dis">&nbsp;/</i>
+                                <div class="infor-more">
+                                    <h5 class="service-more-hd">合作专区</h5>
+                                    <p class="top-nav-list">
+                                        <a href="#" target="_blank">联名卡申请</a>
+                                        <a href="#" target="_blank">唯品卡</a>
+                                        <a href="#" target="_blank">支付专区</a>
+                                    </p>
+                                    <span class="line"></span>
+                                    <h5 class="service-more-hd">关于我们</h5>
+                                    <p class="top-nav-list">
+                                        <a href="#" target="_blank">Sell on vip</a>
+                                        <a href="#" target="_blank">品牌招商</a>
+                                        <a href="#" target="_blank">官方博客</a>
+                                    </p>
+                                </div>
+                            </li>
+        
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    <div class="head-logo">
+        <div class="head-inner" id="J-head-inner-def">
+            <div class="c-logo">
+                <div class="header-logo-dop">
+                    <a  href="#">
+                        <img src="imgs/log.png" alt="品牌特卖" id="J-vipLogo">
+                    </a>
+                </div>
+            </div>
+            <div class="fangxin-pix">
+                <img src="imgs/icon.png">
+            </div>
+            <div id="J_head_cart" class="head-cart">
+                <div class="tool" id="J_shortTime">
+                    <a href="#" >
+                        <span class="iconfont">&#xe60a;</span>
+                        <span class="mycarttext-default" id="mycartText">购物袋</span>
+                        <span id="Count">0</span>
+
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <nav class="main-nav">  
+            <div class="main-nav-inner" id="J_main_nav">
+                <ul class="nav nav-tabs">
+                    <li class="active  spfl  dropdown" style="width:160px"><a href="#" class="dropdown-toggle"
+                            data-toggle="dropdown"><span class="iconfont">&#xe636;</span>商品分类</a>
+                        <ul class="dropdown-menu spflbefore" id="spflb">
+                        </ul>
+                    </li>
+                    <li><a href="#" style="color:#f10983">首页</a></li>
+                    <li><a href="#" style="color:#333">女装</a></li>
+                    <li><a href="#" style="color:#333">女装</a></li>
+                    <li><a href="#" style="color:#333">女装</a></li>
+    
+                    <li class="dropdown" style="color:#333">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color:#333">
+                            更多<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" >
+                            <li><a href="#">运动</a></li>
+                            <li><a href="#">家具</a></li>
+                            <li><a href="#">生活</a></li>
+    
+                        </ul>
+                    </li>
+    
+                </ul>
+    
+            </div> 
+        </nav>
+    <div class="content">
+        <div class="con-zoom">
+            <a href="index.html" class="goh">返回首页</a>
+            <div class="zoom-box">
+                <div class="zoom-pic">
+                    <div class="pic-box">
+                        <span class="iconfont">&#xe643;</span>
+                        <img src="imgs/xqpic1-mid.jpg">
+                        <div id="move">+</div>
+                    </div>
+                    <div class="tab-box">
+                        <img src="imgs/xqpic1-small.jpg" class="active" index="1">
+                        <img src="imgs/xqpic2-small.jpg" index="2">
+                        <img src="imgs/xqpic3-small.jpg" index="3">
+                    </div>
+                </div>
+                <div class="zoom-cart">
+                    <p class="good-type" >调数据</p>
+                    <p class="title">调数据</p>
+                    <p class="price">
+                        <span class="zhen-price">调数据</span>
+                        <span>￥9999</span>
+                        <span>2.7折</span>
+                    </p>
+                    <div class="count-p">
+                        <em>数量</em>
+                        <div class="count-div">
+                            <span id="sub">-</span>
+                            <input type="text" value="1" id="input-count">
+                            <span id="plus">+</span>
+                        </div>
+                        <div class="tishi">此商品一次限购10件，bugbug要判断购物车里有几件</div>
+                        
+                    </div>
+                    <!-- <div class="tishi">此商品一次限购10件可以累加bug</div> -->
+                    <p class="btn">
+                        <span class="iconfont">&#xe60a;&nbsp;&nbsp;&nbsp;加入购物袋</span>
+                    </p>
+                    <div class="pic">
+                        <p>调过来的图片是这个，放大镜的效果如左边所示</p>
+                        <p>应该按调来的数据动态生成左边的结构</p>
+                        <p>因为调过来的数据里面只有一张图片，所以就定成这个了</p>
+                        <img src="imgs/w4.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   <div class="detial-pic">
+       <img src="imgs/detialp1.png">
+       <img src="imgs/pic-size.jpg">
+       <img src="imgs/size2.png">
+       <img src="imgs/detialp1.png">
+       <img src="imgs/pic-size.jpg">
+       <img src="imgs/size2.png">
+   </div>
+     
+    <script src="js/dieial.js"></script>
+    <script src="js/spfl.js"></script> 
+    <script src="js/floor.js"></script>
+</body>
+
+</html>

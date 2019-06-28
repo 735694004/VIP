@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css" />
+    <link rel="stylesheet" href="css/regist.css">
+
+    <title>注册页面</title>
+</head>
+
+<body class="regSingle  J-container">
+    <div class="c-header">
+        <div class="c-header-inner">
+            <div class="c-logo">
+                <a class="c-logo-link" id="for-cascade-login-link" href="index.html"></a>
+            </div>
+            <div class="c-service"></div>
+        </div>
+    </div>
+    <div class="c-body">
+        <div class="c-content">
+            <div class="c-register  f-right">
+                <div class="c-register-header">
+                    <div class="c-register-switch-login" passport_mars_sead_hover="">
+                        已注册可
+                        <!--
+                         --><a href="logn.html" id="J_normal_loginlink" class="u-text-highlight">直接登录</a>
+                    </div>
+                    <h3 class="c-register-title">会员注册</h3>
+                </div>
+                <div class="c-register-body">
+                    <form id="reg_mobile_form" action="index.html" method="post" autocomplete="off"
+                        class="register-form">
+                        <div class="group">
+                            <div class="ui-form-item-group">
+                                <span class="pspanicon iconfont">&#xe61d;</span>
+                                <input type="text" class="ui-input ipt-phone " id="J_mobile_name" name="loginName"
+                                    placeholder="请输入手机号码">
+                                <span class="u-input-warning iconfont">&#xe641;</span>
+                                <span class="u-input-success iconfont">&#xe6bf;</span>
+
+                            </div>
+                            <div class="u-input-tip"><span class="text-phone"></span></div>
+                        </div>
+
+                        <!-- <div class="control-group" id="J_verify_code_mobile"></div> -->
+
+                        <div class="group">
+                            <div class="ui-form-item-group">
+                                <span class="pspanicon iconfont">&#xe639;</span>
+                                <input type="text" id="J_mobile_code" class="ui-input ipt-verify-code" name="pvcode"
+                                    placeholder="生成账户名">
+                               <a href="javascript:;" id="J_mobile_verifycode_btn" class="btn-verify-code">获取用户名</a>
+
+                                <span class="u-input-warning iconfont">&#xe641;</span>
+                                <span class="u-input-success iconfont">&#xe6bf;</span>
+                                
+                            </div>
+                            <div class="u-input-tip"><span class="text"></span></div>
+                        </div>
+
+                        <div class="group">
+                            <div class="ui-form-item-group">
+                                <span class="c-icon-password pspanicon iconfont">&#xe617;</span>
+                                <input type="password" class="ui-input" id="J_mobile_pwd" name="password" maxlength="20"
+                                    placeholder="密码由6-20位字母，数字和符号组合">
+
+                                <span class="u-input-warning iconfont">&#xe641;</span>
+                                <span class="u-input-success iconfont">&#xe6bf;</span>
+
+                            </div>
+                            <div class="u-input-tip">
+                                <span class="strength-indicator">
+                                    
+                                    <span class="indicator-text text-weak">弱</span>
+                                    <span class="indicator-text text-medium">中</span>
+                                    <span class="indicator-text text-strong">强</span>
+                                </span>
+                                <span class="text password-tip"></span>
+                            </div>
+                        </div>
+
+                        <div class="group">
+                            <div class="ui-form-item-group">
+                                <span class="c-icon-password pspanicon iconfont">&#xe617;</span>
+                                <input type="password" class="ui-input confirm-pwd" id="J_mobile_confirm_pwd"
+                                    name="confirmPassword" maxlength="20" placeholder="请再次输入上面的密码">
+                                <span class="u-input-warning iconfont">&#xe641;</span>
+                                <span class="u-input-success iconfont">&#xe6bf;</span>
+
+                            </div>
+                            <div class="u-input-tip"><span class="text-pwqr"></span></div>
+                        </div>
+
+                        <div class="group">
+                            <div class="ui-form-item-group hasprovision">
+                                <span class="ui-checkbox mr0">
+                                    <input type="checkbox" id="J_mobile_agree" name="agree" 
+                                        ><label for="J_mobile_agree" ></label>
+                                </span>
+                                <label for="J_mobile_agree" class="u-provision-txt">我已阅读并接受以下条款：<a target="_blank"
+                                        id="J_mobile_provision" href="#">《唯品会服务条款》</a><a
+                                        href="http://support.vip.com/privacy/" class="u-link"
+                                        target="_blank">《隐私条款》</a><a href="https://i.vpal.com/clause.html"
+                                        class="u-link" target="_blank">《唯品支付用户服务协议》</a></label>
+                            </div>
+                            <div class="u-input-tip"><span class="text"></span></div>
+                        </div>
+
+                        <div class="group">
+                            <a href="javaScript:;"  id="J_mobile_reg_button" target="_blank">
+                                <span class="ui-btn-loading-before">立即注册</span>
+                            </a>
+                        
+                        </div>
+                    </form>
+                </div>
+                <script type="text/javascript">
+                    var isThirdLogin = false;
+                </script>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="c-footer">
+        <p class="c-copyright">Copyright 2008-2019 vip.com，All Rights Reserved ICP证：粤 B2-20080329</p>
+    </div>
+
+    <script type="text/javascript" src="js/regist.js"></script>
+    <script type="text/javascript" src="js/spfl.js"></script>
+
+</body>
+
+</html>

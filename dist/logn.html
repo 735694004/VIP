@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css" />
+
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body class="J-container">
+    <div class="c-header">
+        <div class="c-header-inner">
+            <div class="c-logo">
+                <a class="c-logo-link" id="for-cascade-login-link" href="index.html"></a>
+            </div>
+            <div class="c-service"></div>
+        </div>
+    </div>
+
+    <div class="c-body  J-ads">
+        <div class="c-content">
+            <div class="c-login-panel  f-right">
+                <div class="c-login-panel-body">
+                    <div class="c-tab  c-login-tab     J-tab">
+                        <div class="c-tab-nav">
+                            <div class="c-tab-nav-item  c-tab-nav-item-qr  J-tab-nav-item" data-current-item="qr">扫码登录
+                            </div>
+                            <div class="c-tab-nav-item c-tab-nav-item-cc J-tab-nav-item is-tab-nav-item-active " data-current-item="form">
+                                账户登录</div>
+                        </div>
+                        <div class="c-tab-content">
+                            <div class="c-tab-code">
+                                <div class="c-qr  J-qr">
+                                    <div class="c-qr-group">
+                                        <div class="c-qr-row  J-qr-row">
+                                            <div class="c-qr-img-wrapper  J-qr-img-wrapper" style="left: 94px;">
+                                                <img src="imgs/code.png" class="J-qr-img" width="150" height="150"
+                                                    alt="登录二维码">
+
+                                            </div>
+                                        </div>
+                                        <div class="c-qr-guide-text">
+                                            <span class="iconfont">&#xe623;</span>打开<span
+                                                class="u-text-highlight">唯品会APP-个人中心</span>，扫一扫登录
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="c-tab-np">
+                                <div class="c-login-form">
+                                    <div class="m-passport-from" id="J_login_form">
+                                        <div class="c-form-item">
+                                            <div class="group">
+                                                <div class="ui-form-item-group">
+                                                    <span class="c-icon  pspanicon  iconfont">&#xe63e;</span>
+                                                    <input id="J_login_name" class="ui-input" type="text"
+                                                        name="loginName" placeholder="手机号/用户名/邮箱">
+
+                                                    <span class="u-input-warning iconfont">&#xe641;</span>
+                                                    <span class="u-input-success iconfont">&#xe6bf;</span>
+                                                </div>
+                                            </div>
+                                            <div class="group">
+                                                <div class="ui-form-item-group">
+                                                    <span class="c-icon  pspanicon iconfont">&#xe617;</span>
+                                                    <input id="J_login_pwd" class="ui-input" type="password"
+                                                        name="password" maxlength="20" placeholder="密码">
+                                                    <span class="u-input-warning iconfont">&#xe641;</span>
+                                                    <span class="u-input-success iconfont">&#xe6bf;</span>
+                                                </div>
+                                            </div>
+                                            <div class="group">
+                                                <div class="ui-form-item-groupla">
+
+                                                    <div class="ui-checkbox">
+                                                        <input type="checkbox" id="J_remember_username" name="remUser"
+                                                            class="ui-checkbox-normal" >
+                                                        <label for="J_remember_username"
+                                                            class="u-checkbox-label">记住用户名</label>
+                                                    </div>
+                                                    <a href="#" class="i-forget-link">忘记密码</a>
+                                                </div>
+                                            </div>
+                                            <div class="c-form-item-submit">
+                                                <div class="u-form-submit">
+                                                    <button type="submit" class="ui-btn-large" id="J_login_submit">
+                                                        <span class="ui-btn-loading-before">登录</span>
+
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-login-panel-footer">
+                        <div class="c-login-third">
+                            <div class="c-login-third-special">
+                                <div class="c-login-third-wechat-wrapper  ">
+                                    <a class="c-login-third-wechat" href="#"></a>
+                                    <div class="test"></div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="f-right">
+                                <a href="regist.html">免费注册</a>
+                            </div>
+
+                            <div class="c-login-third-content" passport_mars_sead_hover="">
+                                <div class="c-login-third-main">
+                                    <ul class="c-login-third-main-list">
+                                        <li class="c-login-third-main-item  is-login-third-item-disabled">
+                                            <a class="c-login-third-link  J-third-item-disabled" href="javascript:;"
+                                                target="_blank" rel="noopener" mars_sead="passport_bottom_weibo_button"
+                                                title="新浪微博登录方式正在升级，暂不可用，请选择其他方式登录">新浪微博</a>
+                                        </li>
+                                        <li class="c-login-third-main-item  ">
+                                            <a class="c-login-third-link  " href="//passport.vip.com/login/qq"
+                                                target="_blank" rel="noopener"
+                                                mars_sead="passport_bottom_qq_button">QQ</a>
+                                        </li>
+                                        <li class="c-login-third-main-item  ">
+                                            <a class="c-login-third-link  " href="//passport.vip.com/login/alipay"
+                                                target="_blank" rel="noopener"
+                                                mars_sead="passport_bottom_alipay_button">支付宝</a>
+                                        </li>
+                                    </ul>
+                                    <!--
+                         --><a href="###" class="c-login-third-more-button  J-button-login-more  J_fake_a">
+                                        <span class="c-login-third-more">更多<span class="iconfont">&#xe620;</span></span>
+                                        <span class="c-login-third-more-collapse">收起<span
+                                                class="iconfont">&#xe60d;</span></span>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="c-footer">
+            <p class="c-copyright">Copyright 2008-2019 vip.com，All Rights Reserved ICP证：粤 B2-20080329</p>
+        </div>
+
+
+
+
+
+
+
+
+        <script type="text/javascript" src="js/login.js"></script>
+
+</body>
+
+</html>
