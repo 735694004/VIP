@@ -98,7 +98,7 @@ $(function () {
             if (i == $("#input-count").val()) {
                 var msg = confirm("是否跳转至购物车页面")
                 if (msg) {
-                    window.open('cart.html?token=' + Token)//+data.token,'_blank'); 
+                    window.open('cart.html?token=' + Token)
                 }
 
             } else {
