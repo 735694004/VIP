@@ -37,10 +37,8 @@ class Cart {
 		<li >
 		    <input type="checkbox" class="chk" checked="checked">        
 			<a href="detial.html?id=${this.data[i].goods.gid}&token=${Token}"><img src='${url}'></a>					
-			<p class="title">${this.data[i].goods.name}<br>单价：<span class="dj">${this.data[i].goods.price}</span></p>
-			
-			<p class="js">
-            
+			<p class="title">${this.data[i].goods.name}<br>单价：<span class="dj">${this.data[i].goods.price}</span></p>			
+			<p class="js">           
             <span class="jian">-</span>
 		 	<input type="text" value="${this.data[i].count}" class="num" data-id="${this.data[i].id}" data-gid="${this.data[i].gid}">
 			<span class="jia">+</span>	
@@ -80,7 +78,7 @@ class Cart {
 		var _this = this;
 		for (let i = 0; i < this.ajian.length; i++) {
 
-			this.ajia[i].onclick = () => {
+			this.ajia[i].onclick = ()=> {
 				this.anum[i].value = parseInt(this.anum[i].value) + 1;
 				var id = this.anum[i].getAttribute("data-id");
 				var gid = this.anum[i].getAttribute("data-gid");
@@ -92,21 +90,28 @@ class Cart {
 				var id = this.anum[i].getAttribute("data-id");
 				var gid = this.anum[i].getAttribute("data-gid");
 				this.anum[i].value -= 1;
-				if (this.anum[i].value <= 1) {
-					this.anum[i].value = 1
+				if (this.anum[i].value <= 1){
+					this.anum[i].value = 1;
 				}
 				this.updata(id, gid, -1);
 				this.getzj();
-				this.nnn()
+				this.nnn();
 			}
 			this.anum[i].onchange = () => {
-				if (this.anum[i].value <= 1) {
-					this.anum[i].value = 1
+				if (this.anum[i].value <= 1){
+					this.anum[i].value = 1;
 				}
 				var id = this.anum[i].getAttribute("data-id");
 				var gid = this.anum[i].getAttribute("data-gid");
 				this.updata(id, gid, 0);
-				this.updata(id, gid, this.anum[i].value);
+				for(let j=0;j<this.anum[i].value;j++){
+					$.get("http://47.104.244.134:8080/cartsave.do", 
+					{ gid: gid, token: Token }).done(function (data) {
+					   if(data.code==1){
+						   alert("没村上");
+					   }
+				   })
+				}
 				this.getzj();
 				this.nnn()
 			}
@@ -116,10 +121,10 @@ class Cart {
 				var id = this.getAttribute("data-id");
 				var gid = this.getAttribute("data-gid");
 				_this.oul.removeChild(this.parentNode);
-				delete _this.data[id]
+				delete _this.data[id];
 				_this.updata(id, gid, 0);
 				_this.getzj();
-				_this.nnn()
+				_this.nnn();
 			}
 			//委托
 			//			this.ali[i].onclick = (e) => {
@@ -135,7 +140,7 @@ class Cart {
 			//			}
 			this.achk[i].onclick = () => {
 				this.getzj();
-				//this.nnn()
+				this.nnn()
 			}
 
 		}
